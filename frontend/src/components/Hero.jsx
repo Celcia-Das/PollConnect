@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import "../styles/Landing.css";
+import "../styles/landing.css";
 
 function Hero() {
   const navigate = useNavigate();

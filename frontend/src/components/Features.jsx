@@ -1,4 +1,4 @@
-import "../styles/Landing.css";
+import "../styles/landing.css";
 
 function Features() {
   return (
