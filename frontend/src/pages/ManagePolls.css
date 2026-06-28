@@ -1,0 +1,159 @@
+.manage-page{
+    min-height:100vh;
+    background:#F8FAFC;
+    padding:50px 25px;
+}
+
+.manage-container{
+    max-width:1100px;
+    margin:auto;
+}
+
+.manage-title{
+    font-size:38px;
+    color:#1E293B;
+    margin-bottom:8px;
+}
+
+.manage-subtitle{
+    color:#64748B;
+    margin-bottom:35px;
+}
+
+.poll-card{
+    background:white;
+    border-radius:22px;
+    padding:28px;
+    margin-bottom:25px;
+    box-shadow:0 12px 35px rgba(0,0,0,.06);
+    transition:.3s;
+}
+
+.poll-card:hover{
+    transform:translateY(-5px);
+}
+
+.poll-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    gap:20px;
+}
+
+.poll-header h2{
+    color:#1E293B;
+    margin-bottom:6px;
+}
+
+.poll-header p{
+    color:#64748B;
+}
+
+.status{
+    background:#DCFCE7;
+    color:#15803D;
+    padding:8px 15px;
+    border-radius:30px;
+    font-size:14px;
+    font-weight:600;
+}
+
+.question-box{
+    margin-top:25px;
+}
+
+.question-box strong{
+    color:#475569;
+}
+
+.question-box p{
+    margin-top:8px;
+    color:#334155;
+}
+
+.options{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+    margin:25px 0;
+}
+
+.option-chip{
+    background:#F3E8FF;
+    color:#7C3AED;
+    padding:9px 16px;
+    border-radius:999px;
+    font-size:14px;
+    font-weight:600;
+}
+
+.action-buttons{
+    display:flex;
+    gap:12px;
+    flex-wrap:wrap;
+}
+
+.action-btn{
+    background:#8B5CF6;
+    color:white;
+    border:none;
+    padding:11px 18px;
+    border-radius:12px;
+    cursor:pointer;
+    transition:.25s;
+    font-weight:600;
+}
+
+.action-btn:hover{
+    transform:translateY(-2px);
+    background:#7C3AED;
+}
+
+.delete-btn{
+    background:#EF4444;
+    color:white;
+    border:none;
+    padding:11px 18px;
+    border-radius:12px;
+    cursor:pointer;
+    transition:.25s;
+    font-weight:600;
+}
+
+.delete-btn:hover{
+    background:#DC2626;
+}
+
+.empty-state{
+    background:white;
+    padding:40px;
+    border-radius:20px;
+    text-align:center;
+    color:#64748B;
+    box-shadow:0 10px 30px rgba(0,0,0,.06);
+}
+
+@media(max-width:768px){
+
+.poll-header{
+    flex-direction:column;
+}
+
+.manage-page{
+    padding:25px 15px;
+}
+
+.manage-title{
+    font-size:30px;
+}
+
+.action-buttons{
+    flex-direction:column;
+}
+
+.action-btn,
+.delete-btn{
+    width:100%;
+}
+
+}

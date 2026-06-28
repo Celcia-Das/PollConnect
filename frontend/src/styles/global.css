@@ -1,0 +1,55 @@
+/* Google Font */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+:root{
+
+    --bg:#F8FAFC;
+
+    --card:#FFFFFF;
+
+    --primary:#8B5CF6;
+
+    --primary-hover:#7C3AED;
+
+    --secondary:#C4B5FD;
+
+    --text:#1E293B;
+
+    --text-light:#64748B;
+
+    --border:#E2E8F0;
+
+    --danger:#EF4444;
+
+    --success:#22C55E;
+
+    --shadow:0 10px 30px rgba(15,23,42,.08);
+
+    --radius:18px;
+}
+
+body{
+
+    font-family:'Inter',sans-serif;
+
+    background:var(--bg);
+
+    color:var(--text);
+}
+
+button{
+
+    font-family:inherit;
+}
+
+input,
+textarea{
+
+    font-family:inherit;
+
+    outline:none;
+}

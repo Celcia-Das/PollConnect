@@ -1,0 +1,133 @@
+.poll-page{
+    min-height:100vh;
+    background:#F8FAFC;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:30px;
+}
+
+.poll-card{
+    background:white;
+    width:100%;
+    max-width:650px;
+    padding:40px;
+    border-radius:24px;
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+}
+
+.poll-badge{
+    display:inline-block;
+    background:#F3E8FF;
+    color:#7C3AED;
+    padding:8px 16px;
+    border-radius:999px;
+    font-weight:600;
+    margin-bottom:20px;
+}
+
+.poll-card h1{
+    color:#1E293B;
+    margin-bottom:10px;
+}
+
+.poll-description{
+    color:#64748B;
+    margin-bottom:30px;
+}
+
+.poll-question{
+    font-size:22px;
+    font-weight:600;
+    color:#334155;
+    margin-bottom:25px;
+}
+
+.poll-input{
+    width:100%;
+    padding:14px;
+    border:1px solid #CBD5E1;
+    border-radius:12px;
+    margin-bottom:30px;
+    font-size:15px;
+    outline:none;
+}
+
+.poll-input:focus{
+    border-color:#8B5CF6;
+}
+
+.options-container{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.option-card{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    padding:18px;
+    border:2px solid #E2E8F0;
+    border-radius:14px;
+    cursor:pointer;
+    transition:.25s;
+}
+
+.option-card:hover{
+    border-color:#8B5CF6;
+    background:#FAF5FF;
+}
+
+.option-card.selected{
+    border-color:#8B5CF6;
+    background:#F3E8FF;
+}
+
+.option-card input{
+    transform:scale(1.2);
+}
+
+.submit-btn{
+    margin-top:35px;
+    width:100%;
+    padding:15px;
+    background:#8B5CF6;
+    color:white;
+    border:none;
+    border-radius:14px;
+    font-size:17px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.25s;
+}
+
+.submit-btn:hover{
+    background:#7C3AED;
+}
+
+.poll-loading{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#F8FAFC;
+    font-size:24px;
+    color:#475569;
+}
+
+@media(max-width:768px){
+
+.poll-page{
+    padding:18px;
+}
+
+.poll-card{
+    padding:28px;
+}
+
+.poll-question{
+    font-size:20px;
+}
+
+}
