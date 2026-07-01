@@ -15,7 +15,7 @@ function Results() {
   const fetchAnalytics = async () => {
     try {
       const response = await fetch(
-       `${API_URL}/api/polls/${id}`
+       `${API_URL}/api/responses/${id}`
       );
 
       const data = await response.json();
