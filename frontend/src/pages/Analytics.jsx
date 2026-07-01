@@ -35,7 +35,7 @@ function Analytics() {
 
   const fetchAnalytics = async () => {
     try {
-      const response = await fetch(`${API_URL}/api/polls`);
+      const response = await fetch(`${API_URL}/api/dashboard`);
 
       const data = await response.json();
 
