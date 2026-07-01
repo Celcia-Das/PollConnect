@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Navbar from "../components/Navbar";
+import API_URL from "../config/api";
 import "./AdminRegister.css";
 
 function AdminRegister() {
@@ -18,7 +19,7 @@ function AdminRegister() {
 
     try {
       const response = await fetch(
-        "http://localhost:5000/api/admin/register",
+        `${API_URL}/api/admin/register`,
         {
           method: "POST",
           headers: {

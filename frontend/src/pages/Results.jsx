@@ -1,6 +1,7 @@
 import "./Results.css";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import API_URL from "../config/api";
 
 function Results() {
   const { id } = useParams();
@@ -14,7 +15,7 @@ function Results() {
   const fetchAnalytics = async () => {
     try {
       const response = await fetch(
-        `http://localhost:5000/api/responses/${id}`
+       `${API_URL}/api/polls/${id}`
       );
 
       const data = await response.json();

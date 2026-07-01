@@ -2,6 +2,7 @@ import "./ManagePolls.css";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Navbar from "../components/Navbar";
+import API_URL from "../config/api";
 
 function ManagePolls() {
   const navigate = useNavigate();
@@ -14,7 +15,7 @@ function ManagePolls() {
 
   const fetchPolls = async () => {
     try {
-      const response = await fetch("http://localhost:5000/api/polls");
+      const response = await fetch(`${API_URL}/api/polls`);
       const data = await response.json();
       setPolls(data.polls);
     } catch (error) {
@@ -31,7 +32,7 @@ function ManagePolls() {
 
     try {
       const response = await fetch(
-        `http://localhost:5000/api/polls/${id}`,
+        `${API_URL}/api/polls/${id}`,
         {
           method: "DELETE",
         }

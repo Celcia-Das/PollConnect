@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import StatCard from "../components/UI/StatCard";
 import Layout from "../components/Layout/Layout";
 import "./Dashboard.css";
+import API_URL from "../config/api";
 
 function Dashboard() {
   const navigate = useNavigate();
@@ -20,7 +21,7 @@ function Dashboard() {
 
   const fetchDashboard = async () => {
     try {
-      const response = await fetch("http://localhost:5000/api/dashboard");
+      const response = await fetch(`${API_URL}/api/polls`);
       const data = await response.json();
 
       if (data.success) {

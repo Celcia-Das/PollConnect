@@ -1,12 +1,12 @@
 import "./QRCodePage.css";
 import QRCode from "react-qr-code";
 import { useParams } from "react-router-dom";
+import API_URL from "../config/api";
 
 function QRCodePage() {
   const { id } = useParams();
 
-  const pollURL = `http://localhost:5173/poll/${id}`;
-
+ const pollURL = `${window.location.origin}/poll/${id}`;
   const copyLink = async () => {
     try {
       await navigator.clipboard.writeText(pollURL);

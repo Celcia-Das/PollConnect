@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Layout from "../components/Layout/Layout";
 import "../styles/Analytics.css";
+import API_URL from "../config/api";
 
 import {
   ResponsiveContainer,
@@ -34,9 +35,7 @@ function Analytics() {
 
   const fetchAnalytics = async () => {
     try {
-      const response = await fetch(
-        "http://localhost:5000/api/analytics"
-      );
+      const response = await fetch(`${API_URL}/api/polls`);
 
       const data = await response.json();
 

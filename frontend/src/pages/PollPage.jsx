@@ -1,6 +1,7 @@
 import "./PollPage.css";
 import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
+import API_URL from "../config/api";
 
 function PollPage() {
   const { id } = useParams();
@@ -17,7 +18,7 @@ function PollPage() {
   const fetchPoll = async () => {
     try {
       const response = await fetch(
-        `http://localhost:5000/api/polls/${id}`
+       `${API_URL}/api/polls/${id}`
       );
 
       const data = await response.json();
@@ -35,7 +36,7 @@ function PollPage() {
 
     try {
       const response = await fetch(
-        "http://localhost:5000/api/responses",
+       `${API_URL}/api/polls`,
         {
           method: "POST",
           headers: {
